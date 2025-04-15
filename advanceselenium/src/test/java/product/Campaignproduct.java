@@ -140,9 +140,9 @@ public class Campaignproduct {
 		CampValidation validate = new CampValidation(driver);
 		validate.validateCamp(driver, CampName);
 		validate.validatePrd(driver, prdName);
-
-		//driver.findElement(By.xpath("//img[@src=\"themes/softed/images/user.PNG\"]")).click();
-		//driver.findElement(By.linkText("Sign Out")).click();
-		home.logOut(driver);
+//pull it
+		driver.findElement(By.xpath("//img[@src=\"themes/softed/images/user.PNG\"]")).click();
+		driver.findElement(By.linkText("Sign Out")).click();
+		//home.logOut(driver);
 	}
 }
