@@ -98,9 +98,10 @@ camp.enterCampDetails(camName);
 CampValidation validate = new CampValidation(driver);
 validate.validateCamp(driver, camName);
 	Thread.sleep(2000);
-//driver.findElement(By.xpath("//img[@src=\"themes/softed/images/user.PNG\"]")).click();
-//driver.findElement(By.linkText("Sign Out")).click();
-home.logOut(driver);
+	//push it
+driver.findElement(By.xpath("//img[@src=\"themes/softed/images/user.PNG\"]")).click();
+driver.findElement(By.linkText("Sign Out")).click();
+//home.logOut(driver);
 
 
 	}
